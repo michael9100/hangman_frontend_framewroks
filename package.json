@@ -1,0 +1,22 @@
+{
+  "name": "hangman_frontend_framewroks",
+  "version": "1.0.0",
+  "description": "simple game for assignment 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael9100/hangman_frontend_framewroks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michael9100/hangman_frontend_framewroks/issues"
+  },
+  "homepage": "https://github.com/michael9100/hangman_frontend_framewroks#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
