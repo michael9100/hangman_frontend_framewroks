@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <b-navbar  type="light" variant="light" toggleable>
+      <b-navbar type="light" variant="light" toggleable>
         <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
         <b-collapse is-nav id="nav_dropdown_collapse">
           <b-navbar-nav>
@@ -15,12 +15,21 @@
         </b-collapse>
       </b-navbar>
     </div>
-    <div id="nav">
-    </div>
-    <router-view/>
+    <b-container>
+      <router-view/>
+    </b-container>
   </div>
 </template>
 
 <style lang="scss">
-
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.navbar {
+  margin-bottom: 15px;
+}
 </style>
