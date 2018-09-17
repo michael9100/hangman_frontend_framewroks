@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form @submit="onSubmit">
+    <b-form @submit="register">
       <b-form-group>
         <b-form-input id="email"
                       type="email"
@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import AuthService from '@/services/authService'
 export default {
   data () {
     return {
@@ -54,9 +55,15 @@ export default {
     }
   },
   methods: {
-    onSubmit (evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    async register (e) {
+      try {
+        e.preventDefault()
+        const response = await AuthService.register(this.form)
+        console.log("response:", response)
+      }
+      catch (error) {
+        console.error(error);
+      }
     }
   }
 }

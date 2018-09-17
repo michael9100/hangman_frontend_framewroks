@@ -17,4 +17,12 @@ app.get('/posts', (req, res) => {
   )
 })
 
+// =========================================================
+// Authentication
+// =========================================================
+app.post('/auth', (req, res) => {
+  console.log("Request: ", req.body)
+  res.send(req.body)
+})
+
 app.listen(3000)
